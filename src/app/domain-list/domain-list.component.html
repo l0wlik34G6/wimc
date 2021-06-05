@@ -1,0 +1,20 @@
+<table>
+  <tr>
+    <th>Status</th>
+    <th>Domain-Name</th>
+    <th>Owner</th>
+    <th>Path</th>
+    <th>Operations</th>
+  </tr>
+  <tr *ngFor="let domain of domains">
+    <td>{{domain.status}}</td>
+    <td>{{domain.name}}</td>
+    <td>{{domain.owner}}</td>
+    <td>{{domain.path}}</td>
+    <td>OPS</td>
+  </tr>
+</table>
+
+<p>
+  <app-domain-detail *ngIf="domainSelected !== null"></app-domain-detail>
+</p>
