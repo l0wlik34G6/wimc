@@ -1,5 +1,6 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {Domain} from '../models/domain.model';
+import {UserService} from '../user.service';
 // import * as faker from 'faker';
 
 @Component({
@@ -14,7 +15,7 @@ export class DomainListComponent implements OnInit {
       new Domain('valid', 'jobbar.at', 'jschierz', 'jschierz/jobbar/web/')
   ];
 
-  constructor() {
+  constructor(private userService: UserService) {
     // this.domains.push(new Domain(faker.internet.domainName()));
     // this.domains.push(new Domain(faker.internet.domainName()));
     // this.domains.push(new Domain(faker.internet.domainName()));
