@@ -1,6 +1,6 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {Domain} from '../models/domain.model';
-import {UserService} from '../user.service';
+import {UserService} from '../services/user.service';
 // import * as faker from 'faker';
 
 @Component({
